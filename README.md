@@ -1,4 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Migrate All Data
+
+A server-rendered Next.js landing page for a white-glove data migration service. The contact form submits directly to Basin.
+
+## Run locally
+
+```bash
+npm install
+cp .env.example .env.local
+npm run dev
+```
+
+Replace `your-form-id` in `.env.local` with the endpoint for your Basin form. Restart the dev server after changing environment variables. The form sends the visitor's name, email, company, source and destination systems, project notes, and a Basin-compatible `_gotcha` honeypot field.
+
+## Production
+
+```bash
+npm run build
+npm start
+```This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
 
